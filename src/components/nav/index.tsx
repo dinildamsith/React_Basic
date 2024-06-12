@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"; //  link eka use karne api ape url path eka change kargana
-function HomePage() {
+import { Link } from "react-router-dom";
+function NaveBar() {
   return (
     // <> code... </>  mekata Fragment ekak kiyanwa.meka use karne element tikaka wrap kargan wagy
     // function ekakin return karna puluwn 1 element ekak withri.
@@ -17,13 +17,13 @@ function HomePage() {
             </Link>
           </li>
           <li>
-            <Link to="/item" className="text-white hover:text-gray-200">
-              Item
+            <Link to="/urlParameterTest" className="text-white hover:text-gray-200">
+            Url Parameter
             </Link>
           </li>
           <li>
             <Link to="/order" className="text-white hover:text-gray-200">
-              Order
+
             </Link>
           </li>
         </ul>
@@ -32,4 +32,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default NaveBar;

@@ -5,14 +5,15 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom"; 
 
 
-import HomePage from "./pages/home";
+import UrlParameterTestPage from "./pages/urlParameterTest";
+import NaveBar from "./components/nav";
 
 function App() {
   return (
     <>
       <BrowserRouter>
       {/* ---------Routes----------
-        < Routes > kiyana eka React Router v6 ekdi hadunwala dila tiyene.ita kalin e wenuwat tibee < Switch > kiyana eka
+        < Routes > kiyana eka React Router v6 ekdi hadunwala dila tiyene.ita kalin e wenuwat tibee < Swin dtch > kiyana eka
       */}
         <Routes>
           {/* ------------Route----------
@@ -20,7 +21,8 @@ function App() {
              //  path="/" path eka use karne ethnt ethn tiyen path eka url ekt same da check kargan wagy
             //   element={<HomePage />} ehem same nm HomePage kiyana component eka lode karn eka wene.
           */}
-          <Route path="/" element={<HomePage />} />   
+          <Route path="/" element={<NaveBar/>} />  
+          <Route path="/urlParameterTest/:parm" element={<UrlParameterTestPage/>}/> 
         </Routes>
       </BrowserRouter>
     </>
